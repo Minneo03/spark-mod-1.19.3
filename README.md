@@ -8,13 +8,13 @@ This mod is going to be centered around mineral collection and creation. The ide
 
 In Vanilla Minecraft there is an easy way to simply use 1 Sword, or 1 set of armor, but I think it is quite repetitive to do that, and there should be some advantages and disadvantages when creating tools or armor using different materials. For example, Diamond/Netherrite Items are simply better than Leather, Gold, Chain, or Iron. There is close to 0 reason to these items once you obtain these better materials. My idea is to create alternatives that have various downsides and upsides, while still keeping the idea of progression. 
 
--Additions-
+----------------------Additions-----------------------
 
 Minium - Raw Mineral that will be found everywhere that Iron can be found, but with the same rarity as diamonds.
 
--Changes-
+-----------------------Changes------------------------
 
--Future Additions-
+-------------------Future Additions-------------------
 
 Spark Desert Biome (Name Undecided) - A desert like biome that houses different mob variations. There will be minerals exclusive to this biome, and there will be 1 structure housing plenty of mobs along with an endgame mineral.
 
@@ -22,7 +22,7 @@ Abyss - Dungeon generated in the Spark Desert Biome
 
 Repair Kit/Repairing Workshop - A new way to repair items
 
--Future Changes-
+-------------------Future Changes----------------------
 
 Enchantments - Completely removed/heavily nerfed (Configureable) - Possibly Reworked
 
