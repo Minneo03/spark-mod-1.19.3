@@ -1,4 +1,8 @@
 {
   "item.spark-mod.minium": "Minium",
-  "item.spark-mod.raw_minium": "Raw Minium"
+  "item.spark-mod.raw_minium": "Raw Minium",
+
+  "block.spark-mod.minium_block": "Block of Minium",
+  "block.spark-mod.minium_ore": "Minium Ore",
+  "block.spark-mod.deepslate_minium_ore": "Deepslate Minium Ore"
 }

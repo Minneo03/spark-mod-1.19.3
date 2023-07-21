@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "spark-mod:deepslate_minium_ore",
+    "spark-mod:minium_block",
+    "spark-mod:minium_ore"
+  ]
+}

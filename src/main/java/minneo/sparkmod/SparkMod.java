@@ -1,5 +1,6 @@
 package minneo.sparkmod;
 
+import minneo.sparkmod.block.ModBlocks;
 import minneo.sparkmod.item.ModItemGroup;
 import minneo.sparkmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -14,11 +15,8 @@ public class SparkMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItemGroup.registerItemGroups();
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
-
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 		LOGGER.info("Hello Fabric world!");
 	}
