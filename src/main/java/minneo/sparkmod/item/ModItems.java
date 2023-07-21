@@ -13,12 +13,17 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     public static final Item MINIUM = registerItem("minium", new Item(new FabricItemSettings()));
+    public static final Item RAW_MINIUM = registerItem("raw_minium", new Item(new FabricItemSettings()));
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(SparkMod.MOD_ID, name), item);
     }
 
     public static void addItemsToItemGroup() {
         addToItemGroup(ItemGroups.INGREDIENTS, MINIUM);
+        addToItemGroup(ItemGroups.INGREDIENTS, RAW_MINIUM);
+
+        addToItemGroup(ModItemGroup.SPARK, MINIUM);
+        addToItemGroup(ModItemGroup.SPARK, RAW_MINIUM);
     }
 
     private static void addToItemGroup(ItemGroup group, Item item) {
