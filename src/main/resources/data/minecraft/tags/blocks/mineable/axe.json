@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-
+    "spark-mod:white_phosphorus_log",
+    "spark-mod:white_phosphorus_planks"
   ]
 }

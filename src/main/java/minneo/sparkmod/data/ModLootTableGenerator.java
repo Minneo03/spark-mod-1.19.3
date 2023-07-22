@@ -12,8 +12,13 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider{
 
     @Override
     public void generate() {
+        //Normal Blocks
         addDrop(ModBlocks.MINIUM_BLOCK);
+        addDrop(ModBlocks.WHITE_PHOSPHORUS_LOG);
+        addDrop(ModBlocks.WHITE_PHOSPHORUS_PLANKS);
 
+
+        //Normal Ores
         addDrop(ModBlocks.MINIUM_ORE,oreDrops(ModBlocks.MINIUM_ORE, ModItems.RAW_MINIUM));
         addDrop(ModBlocks.DEEPSLATE_MINIUM_ORE, oreDrops(ModBlocks.DEEPSLATE_MINIUM_ORE, ModItems.RAW_MINIUM));
 

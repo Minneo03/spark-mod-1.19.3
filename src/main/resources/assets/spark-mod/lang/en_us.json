@@ -4,5 +4,9 @@
 
   "block.spark-mod.minium_block": "Block of Minium",
   "block.spark-mod.minium_ore": "Minium Ore",
-  "block.spark-mod.deepslate_minium_ore": "Deepslate Minium Ore"
+  "block.spark-mod.deepslate_minium_ore": "Deepslate Minium Ore",
+
+  "block.spark-mod.white_phosphorus_log": "White Phosphorus Log",
+  "block.spark-mod.white_phosphorus_planks": "White Phosphorus Planks",
+  "block.spark-mod.white_phosphorus_leaves": "White Phosphorus Leaves"
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "spark-mod:block/white_phosphorus_planks"
+  }
+}

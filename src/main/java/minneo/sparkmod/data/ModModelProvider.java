@@ -13,13 +13,21 @@ public class ModModelProvider extends FabricModelProvider {
         super(output);
     }
 
+    //BlockStateModels
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        //Cube Models
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MINIUM_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_MINIUM_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MINIUM_ORE);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.WHITE_PHOSPHORUS_PLANKS);
+        blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.WHITE_PHOSPHORUS_LEAVES);
+
+        //Log Models
+        blockStateModelGenerator.registerLog(ModBlocks.WHITE_PHOSPHORUS_LOG);
     }
 
+    //ItemModels
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.MINIUM, Models.GENERATED);

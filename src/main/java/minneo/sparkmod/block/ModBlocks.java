@@ -5,9 +5,7 @@ import minneo.sparkmod.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.ExperienceDroppingBlock;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -21,6 +19,9 @@ public class ModBlocks {
     public static final Block MINIUM_BLOCK = registerBlock("minium_block", new Block(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroup.SPARK);
     public static final Block MINIUM_ORE = registerBlock("minium_ore", new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(), UniformIntProvider.create(2, 5)), ModItemGroup.SPARK);
     public static final Block DEEPSLATE_MINIUM_ORE = registerBlock("deepslate_minium_ore", new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(), UniformIntProvider.create(2, 5)), ModItemGroup.SPARK);
+    public static final Block WHITE_PHOSPHORUS_LOG = registerBlock("white_phosphorus_log", new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(5.0f).requiresTool()),ModItemGroup.SPARK);
+    public static final Block WHITE_PHOSPHORUS_PLANKS = registerBlock("white_phosphorus_planks", new Block(FabricBlockSettings.of(Material.WOOD).strength(5.0f).requiresTool()),ModItemGroup.SPARK);
+    public static final Block WHITE_PHOSPHORUS_LEAVES = registerBlock("white_phosphorus_leaves", new Block(FabricBlockSettings.of(Material.LEAVES).strength(0.5f)),ModItemGroup.SPARK);
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
         return Registry.register(Registries.BLOCK, new Identifier(SparkMod.MOD_ID, name), block);
