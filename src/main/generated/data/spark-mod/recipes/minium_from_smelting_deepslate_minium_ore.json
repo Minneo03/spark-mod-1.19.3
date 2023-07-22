@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "spark",
+  "ingredient": {
+    "item": "spark-mod:deepslate_minium_ore"
+  },
+  "result": "spark-mod:minium"
+}
