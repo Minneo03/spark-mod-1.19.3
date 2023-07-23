@@ -2,6 +2,9 @@
   "replace": false,
   "values": [
     "spark-mod:white_phosphorus_log",
+    "spark-mod:stripped_white_phosphorus_log",
+    "spark-mod:white_phosphorus_wood",
+    "spark-mod:stripped_white_phosphorus_wood",
     "spark-mod:white_phosphorus_planks"
   ]
 }

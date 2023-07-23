@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "spark-mod:block/white_phosphorus_log_top",
+    "side": "spark-mod:block/white_phosphorus_log"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "spark-mod:block/stripped_white_phosphorus_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "spark-mod:block/stripped_white_phosphorus_log"
+    },
+    "axis=z": {
+      "model": "spark-mod:block/stripped_white_phosphorus_log_horizontal",
+      "x": 90
+    }
+  }
+}

@@ -16,15 +16,20 @@ public class ModModelProvider extends FabricModelProvider {
     //BlockStateModels
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        //Cube Models
+        //Minium Models
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MINIUM_BLOCK);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_MINIUM_ORE);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MINIUM_ORE);
+
+        //White Phosphorus Models
+        blockStateModelGenerator.registerLog(ModBlocks.WHITE_PHOSPHORUS_LOG).log(ModBlocks.WHITE_PHOSPHORUS_LOG).wood(ModBlocks.WHITE_PHOSPHORUS_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_WHITE_PHOSPHORUS_LOG).log(ModBlocks.STRIPPED_WHITE_PHOSPHORUS_LOG).wood(ModBlocks.STRIPPED_WHITE_PHOSPHORUS_WOOD);
+
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.WHITE_PHOSPHORUS_PLANKS);
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.WHITE_PHOSPHORUS_LEAVES);
 
-        //Log Models
-        blockStateModelGenerator.registerLog(ModBlocks.WHITE_PHOSPHORUS_LOG);
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.WHITE_PHOSPHORUS_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
     }
 
     //ItemModels

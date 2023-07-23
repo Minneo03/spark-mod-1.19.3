@@ -52,7 +52,24 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_PHOSPHORUS_PLANKS, 4)
                 .input(ModBlocks.WHITE_PHOSPHORUS_LOG)
                 .criterion(FabricRecipeProvider.hasItem(ModBlocks.WHITE_PHOSPHORUS_LOG),
-                        FabricRecipeProvider.conditionsFromItem(ModBlocks.WHITE_PHOSPHORUS_LOG));
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.WHITE_PHOSPHORUS_LOG))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.WHITE_PHOSPHORUS_PLANKS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.WHITE_PHOSPHORUS_WOOD, 3)
+                .pattern("##")
+                .pattern("##")
+                .input('#', ModBlocks.WHITE_PHOSPHORUS_LOG)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.WHITE_PHOSPHORUS_LOG),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.WHITE_PHOSPHORUS_LOG))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.WHITE_PHOSPHORUS_WOOD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.STRIPPED_WHITE_PHOSPHORUS_WOOD, 3)
+                .pattern("##")
+                .pattern("##")
+                .input('#', ModBlocks.STRIPPED_WHITE_PHOSPHORUS_LOG)
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.STRIPPED_WHITE_PHOSPHORUS_LOG),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_WHITE_PHOSPHORUS_LOG))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.STRIPPED_WHITE_PHOSPHORUS_WOOD)));
 
     }
 }

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "spark-mod:white_phosphorus_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "spark-mod:white_phosphorus_planks"
+  }
+}
