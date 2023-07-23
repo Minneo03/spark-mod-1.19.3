@@ -1,4 +1,4 @@
-// 1.19.3	2023-07-23T16:46:12.5434862	Spark/Model Definitions
+// 1.19.3	2023-07-23T18:30:20.3812153	Spark/Model Definitions
 b265932b59b354b9192c1fde5b327d6847772cbd assets\spark-mod\models\block\white_phosphorus_wood.json
 762eb4a830f5b3043672a3fb543bde2fe9b155bd assets\spark-mod\models\block\white_phosphorus_sapling.json
 09757970d9443bb98947f88c040de9756232193d assets\spark-mod\models\item\white_phosphorus_leaves.json
@@ -29,7 +29,7 @@ f6388539eacdc84f467bcc0c2eb094bc51ad01a9 assets\spark-mod\blockstates\white_phos
 3016545e5d7996328c596f3ec0591f2a38ccb165 assets\spark-mod\models\item\stripped_white_phosphorus_log.json
 009787764677f111b87956a36555653324a0a735 assets\spark-mod\blockstates\deepslate_minium_ore.json
 8735324ea0b3553261b479959cee9e9282ce952e assets\spark-mod\models\block\stripped_white_phosphorus_log.json
-388627921904f2054b0dd48bf703ed632d1fc282 assets\spark-mod\models\block\minium_block.json
 51f3226910f93f7b549e587c1129ab49b2998208 assets\spark-mod\models\item\white_phosphorus_planks.json
+388627921904f2054b0dd48bf703ed632d1fc282 assets\spark-mod\models\block\minium_block.json
 e6de79d4b2373aa954d48bb3b3d3968822af0c78 assets\spark-mod\models\item\stripped_white_phosphorus_wood.json
 512ab594af3af25dd821b6dce6040a636aa99ecc assets\spark-mod\models\item\white_phosphorus_sapling.json

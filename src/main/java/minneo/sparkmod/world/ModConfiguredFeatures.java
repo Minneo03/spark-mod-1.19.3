@@ -5,25 +5,35 @@ import minneo.sparkmod.block.ModBlocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.structure.rule.RuleTest;
+import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureConfig;
-import net.minecraft.world.gen.feature.TreeFeatureConfig;
+import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.DarkOakTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
+import java.util.List;
+
 /**
  * For ModConfiguredFeatures. This one I did copy from '<a href="https://github.com/Tutorials-By-Kaupenjoe/Fabric-Tutorial-1.19.3/blob/7-treeGen/src/main/java/net/kaupenjoe/tutorialmod/world/ModConfiguredFeatures.java">...</a>'. Then I modified some of it to fit my needs.
  */
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> WHITE_PHOSPHORUS_KEY = registerKey("white_phosphorus");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> MINIUM_ORE_KEY = registerKey("minium_ore");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
+        RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
+        RuleTest deepslateReplaceables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
+
+        List<OreFeatureConfig.Target> overworldMiniumOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.MINIUM_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_MINIUM_ORE.getDefaultState()));
+
 
         //This is going to register this "Tree" to this particular "Key" which will be referenced in the WhitePhosphorusSaplingGenerator Class.
         register(context, WHITE_PHOSPHORUS_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
@@ -32,6 +42,8 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.WHITE_PHOSPHORUS_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
                 new TwoLayersFeatureSize(1,0,2)).build());
+
+        register(context, MINIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldMiniumOres, 4));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
