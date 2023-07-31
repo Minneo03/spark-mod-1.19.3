@@ -22,7 +22,7 @@ public class ModPlacedFeatures {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, WHITE_PHOSPHORUS_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.WHITE_PHOSPHORUS_KEY),
-                VegetationPlacedFeatures.modifiersWithWouldSurvive(
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
                         PlacedFeatures.createCountExtraModifier(1,0.1f,0), ModBlocks.WHITE_PHOSPHORUS_SAPLING));
 
         register(context, MINIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MINIUM_ORE_KEY), ModOrePlacement.modifiersWithCount(4,

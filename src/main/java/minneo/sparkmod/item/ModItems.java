@@ -14,6 +14,8 @@ public class ModItems {
 
     public static final Item MINIUM = registerItem("minium", new Item(new FabricItemSettings()));
     public static final Item RAW_MINIUM = registerItem("raw_minium", new Item(new FabricItemSettings()));
+
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(SparkMod.MOD_ID, name), item);
     }
