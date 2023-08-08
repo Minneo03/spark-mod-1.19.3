@@ -20,22 +20,9 @@ public class ModItems {
         return Registry.register(Registries.ITEM, new Identifier(SparkMod.MOD_ID, name), item);
     }
 
-    public static void addItemsToItemGroup() {
-        addToItemGroup(ItemGroups.INGREDIENTS, MINIUM);
-        addToItemGroup(ItemGroups.INGREDIENTS, RAW_MINIUM);
-
-        addToItemGroup(ModItemGroup.SPARK, MINIUM);
-        addToItemGroup(ModItemGroup.SPARK, RAW_MINIUM);
-    }
-
-    private static void addToItemGroup(ItemGroup group, Item item) {
-        ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
-    }
-
     public static void registerModItems() {
         SparkMod.LOGGER.info("Registering Mod Items for " + SparkMod.MOD_ID);
 
-        addItemsToItemGroup();
     }
 
 }

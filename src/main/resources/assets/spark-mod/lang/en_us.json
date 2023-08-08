@@ -12,5 +12,7 @@
   "block.spark-mod.stripped_white_phosphorus_wood": "Stripped White Phosphorus Wood",
   "block.spark-mod.white_phosphorus_planks": "White Phosphorus Planks",
   "block.spark-mod.white_phosphorus_leaves": "White Phosphorus Leaves",
-  "block.spark-mod.white_phosphorus_sapling": "White Phosphorus Sapling"
+  "block.spark-mod.white_phosphorus_sapling": "White Phosphorus Sapling",
+
+  "block.spark-mod.brick_forge": "Brick Forge"
 }
