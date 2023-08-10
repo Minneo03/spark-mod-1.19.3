@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "spark",
+  "ingredient": {
+    "item": "spark-mod:tungsten_ore"
+  },
+  "result": "spark-mod:tungsten"
+}
