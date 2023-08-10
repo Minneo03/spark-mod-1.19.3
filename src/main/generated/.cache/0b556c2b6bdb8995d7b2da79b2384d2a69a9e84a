@@ -1,12 +1,16 @@
-// 1.19.3	2023-07-23T18:30:20.3812153	Spark/Model Definitions
+// 1.20.1	2023-08-09T23:28:52.9735359	Spark/Model Definitions
 b265932b59b354b9192c1fde5b327d6847772cbd assets\spark-mod\models\block\white_phosphorus_wood.json
+0a8b6717dc91c8f7064393293867bbd321f1d6b3 assets\spark-mod\blockstates\tungsten_block.json
 762eb4a830f5b3043672a3fb543bde2fe9b155bd assets\spark-mod\models\block\white_phosphorus_sapling.json
-09757970d9443bb98947f88c040de9756232193d assets\spark-mod\models\item\white_phosphorus_leaves.json
+d408f0745a37d030e7c27f047011fecd4adea9fa assets\spark-mod\models\block\tungsten_block.json
 187fc8638f9b1924b65b1262f01dd238b28bdc56 assets\spark-mod\models\item\deepslate_minium_ore.json
+09757970d9443bb98947f88c040de9756232193d assets\spark-mod\models\item\white_phosphorus_leaves.json
 5db78aea15b83e2ad836ad38b8566a4f8385232f assets\spark-mod\models\item\raw_minium.json
+98efee93871b85655cc72af4df7ac5853a511c98 assets\spark-mod\models\item\deepslate_tungsten_ore.json
 7c96089d198753fa42d92c8eb9afc389a46be2c7 assets\spark-mod\models\block\white_phosphorus_log.json
 dbd75d31f6041bce33fb8d2c77fff8d4880c63cc assets\spark-mod\models\item\minium_ore.json
 36df44ba2df438975b3761390f8fb8c66c6d8f33 assets\spark-mod\models\item\minium_block.json
+c35684b56ab366e35c1f563e441f7cacd42459a1 assets\spark-mod\models\item\tungsten_block.json
 d318a4e9209fe07e106d0b4cd2c33313ccfa2759 assets\spark-mod\models\block\white_phosphorus_planks.json
 90d81a0864680eb647ee6bd9859537df26386320 assets\spark-mod\blockstates\minium_ore.json
 d9fc966555d5f21b81acf09e9e2f2bc2ba0c27b5 assets\spark-mod\models\item\minium.json
@@ -14,16 +18,23 @@ d9fc966555d5f21b81acf09e9e2f2bc2ba0c27b5 assets\spark-mod\models\item\minium.jso
 1bc90831ae7c4cf439322b3b44399e4bbbdc3507 assets\spark-mod\blockstates\white_phosphorus_sapling.json
 cba49f049218450a8b59357a918e6cf456cb3a8a assets\spark-mod\models\block\minium_ore.json
 146a369254167c421e679b3c890c81d47530e0bc assets\spark-mod\models\item\white_phosphorus_wood.json
+751057e274e3e6cd6ac723aef48cd46c1772b0ad assets\spark-mod\models\item\tungsten.json
 e5bd3f604fa51bf920ef82a882d506c8c5dd5ecb assets\spark-mod\blockstates\minium_block.json
 7816f518254f8e813bc4b2d86ede78ab3c0fa318 assets\spark-mod\models\item\white_phosphorus_log.json
 003a041c1ab33a6978e5f955c9245a29440f8a9b assets\spark-mod\models\block\deepslate_minium_ore.json
+d79304b088c48a8a1ec878c0fa40f682986ebd57 assets\spark-mod\models\item\tungsten_ore.json
 926ed2b617e37f1622b96207e1ee71a4eeb3b74a assets\spark-mod\models\block\stripped_white_phosphorus_log_horizontal.json
 5306473ddf19cdfc8a232e0f9d05571395b3008c assets\spark-mod\models\block\stripped_white_phosphorus_wood.json
 73a3b5df1d8a89bdb5f2128565e931955eb234e3 assets\spark-mod\blockstates\stripped_white_phosphorus_wood.json
+a952fc7431ca91ca4d831678a48599b5a9e8a697 assets\spark-mod\blockstates\deepslate_tungsten_ore.json
 e2586349dc9403895fbf4fa1fda5413fb39624c2 assets\spark-mod\models\block\white_phosphorus_log_horizontal.json
 715c22ad00b6e03594f3cd705226252b0fb8a2e5 assets\spark-mod\models\block\white_phosphorus_leaves.json
 b97e260b80404bf0255e634b0df2693088959c74 assets\spark-mod\blockstates\stripped_white_phosphorus_log.json
+6ca3634ea52e3337357c9e08280b64eec9255a3c assets\spark-mod\models\item\raw_tungsten.json
 4b7352dbe6636e9cf8e033f2e445327cebdcfea0 assets\spark-mod\blockstates\white_phosphorus_leaves.json
+0171f11a143290dc22f0f3048c8ebde6921d6876 assets\spark-mod\models\block\deepslate_tungsten_ore.json
+946c93a90070509f22cdacc6c3a479083eb75161 assets\spark-mod\blockstates\tungsten_ore.json
+0dd4df9f8fb1ed6109fec397be99ecab14a07737 assets\spark-mod\models\block\tungsten_ore.json
 f6388539eacdc84f467bcc0c2eb094bc51ad01a9 assets\spark-mod\blockstates\white_phosphorus_wood.json
 4919b21467fe72e9685721155f793d567a111933 assets\spark-mod\blockstates\white_phosphorus_log.json
 3016545e5d7996328c596f3ec0591f2a38ccb165 assets\spark-mod\models\item\stripped_white_phosphorus_log.json

@@ -2,9 +2,16 @@
   "item.spark-mod.minium": "Minium",
   "item.spark-mod.raw_minium": "Raw Minium",
 
+  "item.spark-mod.tungsten": "Tungsten",
+  "item.spark-mod.raw_tungsten": "Raw Tungsten",
+
   "block.spark-mod.minium_block": "Block of Minium",
   "block.spark-mod.minium_ore": "Minium Ore",
   "block.spark-mod.deepslate_minium_ore": "Deepslate Minium Ore",
+
+  "block.spark-mod.deepslate_tungsten_ore": "Deepslate Tungsten Ore",
+  "block.spark-mod.tungsten_ore": "Tungsten Ore",
+  "block.spark-mod.tungsten_block": "Block of Tungsten",
 
   "block.spark-mod.white_phosphorus_log": "White Phosphorus Log",
   "block.spark-mod.white_phosphorus_wood": "White Phosphorus Wood",
@@ -14,5 +21,5 @@
   "block.spark-mod.white_phosphorus_leaves": "White Phosphorus Leaves",
   "block.spark-mod.white_phosphorus_sapling": "White Phosphorus Sapling",
 
-  "block.spark-mod.brick_forge": "Brick Forge"
+  "block.spark-mod.stone_brick_forge": "Stone Brick Forge"
 }

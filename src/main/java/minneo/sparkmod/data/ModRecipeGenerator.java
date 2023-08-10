@@ -49,6 +49,20 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModItems.MINIUM))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RAW_MINIUM)));
 
+        //---------------------------All Base Tungsten Recipes
+        //All smelting recipes
+        offerSmelting(exporter, List.of(ModItems.RAW_TUNGSTEN), RecipeCategory.MISC, ModItems.TUNGSTEN, 0.7f, 200, "spark");
+        offerSmelting(exporter, List.of(ModBlocks.DEEPSLATE_TUNGSTEN_ORE), RecipeCategory.MISC, ModItems.TUNGSTEN, 0.7f, 200, "spark");
+        offerSmelting(exporter, List.of(ModBlocks.TUNGSTEN_ORE), RecipeCategory.MISC, ModItems.TUNGSTEN, 0.7f, 200, "spark");
+
+        //All blasting recipes
+        offerBlasting(exporter, List.of(ModItems.RAW_TUNGSTEN), RecipeCategory.MISC, ModItems.TUNGSTEN, 0.7f, 100, "spark");
+        offerBlasting(exporter, List.of(ModBlocks.TUNGSTEN_ORE), RecipeCategory.MISC, ModItems.TUNGSTEN, 0.7f, 100, "spark");
+        offerBlasting(exporter, List.of(ModBlocks.DEEPSLATE_TUNGSTEN_ORE), RecipeCategory.MISC, ModItems.TUNGSTEN, 0.7f, 100, "spark");
+
+        //Creates both a recipe for making a minium block from 9 minium and the reverse.
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.TUNGSTEN, RecipeCategory.MISC, ModBlocks.TUNGSTEN_BLOCK);
+
         //----------------------------All Base White Phosphorus Recipes
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_PHOSPHORUS_PLANKS, 4)
                 .input(ModBlocks.WHITE_PHOSPHORUS_LOG)

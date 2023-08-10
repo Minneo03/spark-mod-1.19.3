@@ -1,7 +1,6 @@
 package minneo.sparkmod.block.custom;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.item.ItemPlacementContext;
@@ -12,10 +11,10 @@ import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
 import net.minecraft.util.math.Direction;
 
-public class BrickForgeBlock extends HorizontalFacingBlock {
+public class ForgeBlock extends HorizontalFacingBlock {
     public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
 
-    public BrickForgeBlock(Settings settings) {
+    public ForgeBlock(Settings settings) {
         super(settings);
         this.setDefaultState((this.stateManager.getDefaultState()).with(FACING, Direction.EAST));
     }

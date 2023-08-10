@@ -14,8 +14,9 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider{
     public void generate() {
         //--Normal Blocks
 
-        //Minium
+        //Mod Ore Blocks
         addDrop(ModBlocks.MINIUM_BLOCK);
+        addDrop(ModBlocks.TUNGSTEN_BLOCK);
 
         //White Phosphorus
         addDrop(ModBlocks.WHITE_PHOSPHORUS_LOG);
@@ -24,12 +25,11 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider{
         addDrop(ModBlocks.STRIPPED_WHITE_PHOSPHORUS_WOOD);
         addDrop(ModBlocks.WHITE_PHOSPHORUS_PLANKS);
 
-
-        //--Normal Ores
-
-        //Minium
+        //Mod Ores
         addDrop(ModBlocks.MINIUM_ORE,oreDrops(ModBlocks.MINIUM_ORE, ModItems.RAW_MINIUM));
         addDrop(ModBlocks.DEEPSLATE_MINIUM_ORE, oreDrops(ModBlocks.DEEPSLATE_MINIUM_ORE, ModItems.RAW_MINIUM));
+        addDrop(ModBlocks.TUNGSTEN_ORE,oreDrops(ModBlocks.TUNGSTEN_ORE, ModItems.RAW_TUNGSTEN));
+        addDrop(ModBlocks.DEEPSLATE_TUNGSTEN_ORE,oreDrops(ModBlocks.DEEPSLATE_TUNGSTEN_ORE, ModItems.RAW_TUNGSTEN));
 
     }
 }

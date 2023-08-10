@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "spark-mod:raw_minium"
-  }
+  },
+  "show_notification": true
 }

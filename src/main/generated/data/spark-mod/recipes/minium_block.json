@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "spark-mod:minium_block"
-  }
+  },
+  "show_notification": true
 }

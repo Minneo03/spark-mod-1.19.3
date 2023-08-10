@@ -1,9 +1,12 @@
-// 1.19.3	2023-07-23T18:30:20.3832125	Spark/Block Loot Tables
+// 1.20.1	2023-08-09T23:28:52.9775092	Spark/Block Loot Tables
+2396f62a443156a39fb7415a3261b4aaa77866fc data\spark-mod\loot_tables\blocks\tungsten_ore.json
 ca9175fcf3b5f2847ede06bf1f43e4637d3a9fbc data\spark-mod\loot_tables\blocks\white_phosphorus_log.json
 61b4e1cce3a8a1f2dd6cfbcdbc2792b36552ae48 data\spark-mod\loot_tables\blocks\white_phosphorus_planks.json
 7465a914929db0adace2b14a1cf2f91c8a34eb21 data\spark-mod\loot_tables\blocks\deepslate_minium_ore.json
+dd879d3474b63738f140cfb0c41eb40a6ed74f31 data\spark-mod\loot_tables\blocks\deepslate_tungsten_ore.json
+e35ec246781a53141eeeb8ed17d3eb2470dfb061 data\spark-mod\loot_tables\blocks\tungsten_block.json
 1938e23157ef2bbf8b6d7c7ce2168763ac84dbc8 data\spark-mod\loot_tables\blocks\minium_ore.json
 0ef4c9161fa61a2327659b6734620125bb1d91c2 data\spark-mod\loot_tables\blocks\minium_block.json
-5189760a95c436701a7dcf5d2f7dafecf5460c20 data\spark-mod\loot_tables\blocks\stripped_white_phosphorus_log.json
 c7ada4e2453b3704dbdc603a1f7ff189f315c385 data\spark-mod\loot_tables\blocks\white_phosphorus_wood.json
+5189760a95c436701a7dcf5d2f7dafecf5460c20 data\spark-mod\loot_tables\blocks\stripped_white_phosphorus_log.json
 cad3da3a3537ce7f85ea42bbe4cceb2390742e73 data\spark-mod\loot_tables\blocks\stripped_white_phosphorus_wood.json

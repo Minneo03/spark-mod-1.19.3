@@ -25,6 +25,7 @@ import java.util.List;
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> WHITE_PHOSPHORUS_KEY = registerKey("white_phosphorus");
     public static final RegistryKey<ConfiguredFeature<?, ?>> MINIUM_ORE_KEY = registerKey("minium_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> TUNGSTEN_ORE_KEY = registerKey("tungsten_ore");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -33,6 +34,10 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> overworldMiniumOres =
                 List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.MINIUM_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_MINIUM_ORE.getDefaultState()));
+
+        List<OreFeatureConfig.Target> overworldTungstenOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.TUNGSTEN_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_TUNGSTEN_ORE.getDefaultState()));
 
 
         //This is going to register this "Tree" to this particular "Key" which will be referenced in the WhitePhosphorusSaplingGenerator Class.
@@ -44,6 +49,7 @@ public class ModConfiguredFeatures {
                 new TwoLayersFeatureSize(1,0,2)).build());
 
         register(context, MINIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldMiniumOres, 4));
+        register(context, TUNGSTEN_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTungstenOres, 8));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

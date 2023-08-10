@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "spark-mod:block/stone_brick_forge"
+    },
+    "facing=east": {
+      "model": "spark-mod:block/stone_brick_forge",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "spark-mod:block/stone_brick_forge",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "spark-mod:block/stone_brick_forge",
+      "y": 270
+    }
+  }
+}

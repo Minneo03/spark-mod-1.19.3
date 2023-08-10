@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:minium_from_smelting_deepslate_minium_ore"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

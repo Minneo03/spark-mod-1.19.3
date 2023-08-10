@@ -1,7 +1,7 @@
 package minneo.sparkmod.block;
 
 import minneo.sparkmod.SparkMod;
-import minneo.sparkmod.block.custom.BrickForgeBlock;
+import minneo.sparkmod.block.custom.ForgeBlock;
 import minneo.sparkmod.item.ModItemGroup;
 import minneo.sparkmod.world.tree.WhitePhosphorusSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -25,6 +25,11 @@ public class ModBlocks {
     public static final Block MINIUM_ORE = registerBlock("minium_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(4.0f).requiresTool(), UniformIntProvider.create(2, 5)));
     public static final Block DEEPSLATE_MINIUM_ORE = registerBlock("deepslate_minium_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4.0f).requiresTool(), UniformIntProvider.create(2, 5)));
 
+    //Tungsten Block Group
+    public static final Block TUNGSTEN_BLOCK = registerBlock("tungsten_block", new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(4.0f).requiresTool()));
+    public static final Block TUNGSTEN_ORE = registerBlock("tungsten_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(4.0f).requiresTool(), UniformIntProvider.create(1, 3)));
+    public static final Block DEEPSLATE_TUNGSTEN_ORE = registerBlock("deepslate_tungsten_ore", new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(4.0f).requiresTool(), UniformIntProvider.create(1, 3)));
+
     //White Phosphorus Block Group
     public static final Block WHITE_PHOSPHORUS_LOG = registerBlock("white_phosphorus_log", new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).strength(5.0f).requiresTool()));
     public static final Block WHITE_PHOSPHORUS_WOOD = registerBlock("white_phosphorus_wood", new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).strength(5.0f).requiresTool()));
@@ -37,8 +42,8 @@ public class ModBlocks {
     public static final Block WHITE_PHOSPHORUS_SAPLING = registerBlock("white_phosphorus_sapling", new SaplingBlock(new WhitePhosphorusSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(0.5f)));
 
     //Custom Blocks
-    public static final Block BRICK_FORGE = registerBlock("brick_forge",
-            new BrickForgeBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(5.0f).requiresTool().nonOpaque()));
+    public static final Block STONE_BRICK_FORGE = registerBlock("stone_brick_forge",
+            new ForgeBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(5.0f).requiresTool().nonOpaque()));
 
     /**
      * To register the block in the form that minecraft requires, I use this method. This method will also call registerBlockItem in order to register the block as an item in minecraft.

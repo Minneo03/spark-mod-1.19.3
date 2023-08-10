@@ -17,6 +17,7 @@ import java.util.List;
 public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> WHITE_PHOSPHORUS_PLACED_KEY = registerKey("white_phosphorus_placed");
     public static final RegistryKey<PlacedFeature> MINIUM_ORE_PLACED_KEY = registerKey("minium_ore_placed");
+    public static final RegistryKey<PlacedFeature> TUNGSTEN_ORE_PLACED_KEY = registerKey("tungsten_ore_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -25,8 +26,11 @@ public class ModPlacedFeatures {
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
                         PlacedFeatures.createCountExtraModifier(1,0.1f,0), ModBlocks.WHITE_PHOSPHORUS_SAPLING));
 
-        register(context, MINIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MINIUM_ORE_KEY), ModOrePlacement.modifiersWithCount(4,
+        register(context, MINIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MINIUM_ORE_KEY), ModOrePlacement.modifiersWithCount(4 ,
                 HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+
+        register(context, TUNGSTEN_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.TUNGSTEN_ORE_KEY), ModOrePlacement.modifiersWithCount(16,
+                HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(0), YOffset.fixed(80))));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {
