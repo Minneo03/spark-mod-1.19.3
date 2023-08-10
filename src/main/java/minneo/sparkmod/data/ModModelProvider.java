@@ -4,9 +4,11 @@ import minneo.sparkmod.block.ModBlocks;
 import minneo.sparkmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.data.client.TextureMap;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -32,6 +34,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.WHITE_PHOSPHORUS_LEAVES);
 
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.WHITE_PHOSPHORUS_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        //Crafting Block Models
+        blockStateModelGenerator.registerCubeWithCustomTextures(ModBlocks.HEAVY_WORKBENCH, Blocks.DEEPSLATE_BRICKS, TextureMap::frontSideWithCustomBottom);
 
     }
 

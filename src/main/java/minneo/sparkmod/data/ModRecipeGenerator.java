@@ -86,5 +86,21 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                         FabricRecipeProvider.conditionsFromItem(ModBlocks.STRIPPED_WHITE_PHOSPHORUS_LOG))
                 .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.STRIPPED_WHITE_PHOSPHORUS_WOOD)));
 
+        //Heavy Workbench Recipe
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.HEAVY_WORKBENCH)
+                .pattern("DTD")
+                .pattern("DCD")
+                .pattern("DDD")
+                .input('D', Items.DEEPSLATE_BRICKS)
+                .input('C', Items.CRAFTING_TABLE)
+                .input('T', ModBlocks.TUNGSTEN_BLOCK)
+                .criterion(FabricRecipeProvider.hasItem(Items.DEEPSLATE_BRICKS),
+                        FabricRecipeProvider.conditionsFromItem(Items.DEEPSLATE_BRICKS))
+                .criterion(FabricRecipeProvider.hasItem(Items.CRAFTING_TABLE),
+                        FabricRecipeProvider.conditionsFromItem(Items.CRAFTING_TABLE))
+                .criterion(FabricRecipeProvider.hasItem(ModBlocks.TUNGSTEN_BLOCK),
+                        FabricRecipeProvider.conditionsFromItem(ModBlocks.TUNGSTEN_BLOCK))
+                .offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModBlocks.HEAVY_WORKBENCH)));
+
     }
 }

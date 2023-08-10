@@ -13,6 +13,8 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider{
     @Override
     public void generate() {
         //--Normal Blocks
+        addDrop(ModBlocks.HEAVY_WORKBENCH);
+        addDrop(ModBlocks.STONE_BRICK_FORGE);
 
         //Mod Ore Blocks
         addDrop(ModBlocks.MINIUM_BLOCK);

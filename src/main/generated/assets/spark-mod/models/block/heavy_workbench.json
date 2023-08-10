@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "minecraft:block/deepslate_bricks",
+    "east": "spark-mod:block/heavy_workbench_side",
+    "north": "spark-mod:block/heavy_workbench_front",
+    "particle": "spark-mod:block/heavy_workbench_front",
+    "south": "spark-mod:block/heavy_workbench_side",
+    "up": "spark-mod:block/heavy_workbench_top",
+    "west": "spark-mod:block/heavy_workbench_front"
+  }
+}

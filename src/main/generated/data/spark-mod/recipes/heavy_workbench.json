@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:crafting_table"
+    },
+    "D": {
+      "item": "minecraft:deepslate_bricks"
+    },
+    "T": {
+      "item": "spark-mod:tungsten_block"
+    }
+  },
+  "pattern": [
+    "DTD",
+    "DCD",
+    "DDD"
+  ],
+  "result": {
+    "item": "spark-mod:heavy_workbench"
+  },
+  "show_notification": true
+}

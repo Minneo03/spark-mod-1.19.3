@@ -2,6 +2,7 @@ package minneo.sparkmod.block;
 
 import minneo.sparkmod.SparkMod;
 import minneo.sparkmod.block.custom.ForgeBlock;
+import minneo.sparkmod.block.custom.HeavyWorkbenchBlock;
 import minneo.sparkmod.item.ModItemGroup;
 import minneo.sparkmod.world.tree.WhitePhosphorusSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -41,9 +42,11 @@ public class ModBlocks {
 
     public static final Block WHITE_PHOSPHORUS_SAPLING = registerBlock("white_phosphorus_sapling", new SaplingBlock(new WhitePhosphorusSaplingGenerator(),FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(0.5f)));
 
-    //Custom Blocks
+    //Custom/Crafting Blocks
     public static final Block STONE_BRICK_FORGE = registerBlock("stone_brick_forge",
             new ForgeBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(5.0f).requiresTool().nonOpaque()));
+    public static final Block HEAVY_WORKBENCH = registerBlock("heavy_workbench",
+            new HeavyWorkbenchBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).strength(3.0f).requiresTool()));
 
     /**
      * To register the block in the form that minecraft requires, I use this method. This method will also call registerBlockItem in order to register the block as an item in minecraft.

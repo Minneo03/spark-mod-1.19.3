@@ -1,15 +1,17 @@
-// 1.20.1	2023-08-09T23:28:52.9755146	Spark/Recipes
+// 1.20.1	2023-08-10T14:51:57.377263	Spark/Recipes
 63a461f6cde4991549f561051ddf44edba793a69 data\spark-mod\recipes\minium_block.json
 d444d03f2a01fc94230568ec5c037428ae8964f8 data\spark-mod\advancements\recipes\misc\tungsten_from_smelting_deepslate_tungsten_ore.json
 e325eb87f32d6de376207b615b72d1eeaa4b08a2 data\spark-mod\recipes\tungsten_from_blasting_deepslate_tungsten_ore.json
 7c5aad6998227c7a6a7c77c4a35a7b4fc7dddd81 data\spark-mod\advancements\recipes\misc\stripped_white_phosphorus_wood.json
 d0ea66d3f7ccfa60808c1c2bae504f36ac28cfb4 data\spark-mod\advancements\recipes\misc\tungsten_from_blasting_raw_tungsten.json
 0cc7ede8ce50a704cc319d64cd70be25fa580b25 data\spark-mod\recipes\minium.json
+cae45487fb51b37f944c28f4bd42c4cf677e893c data\spark-mod\advancements\recipes\misc\heavy_workbench.json
 bcbc9d0568b145fb1abd11aa74e333b824f44b32 data\spark-mod\advancements\recipes\misc\tungsten_from_smelting_raw_tungsten.json
 dcdaa994f7f23a73cc91ded2099bb7444d561e39 data\spark-mod\advancements\recipes\misc\tungsten_from_blasting_tungsten_ore.json
 a6cb4d8c91954b4517ae5b76b25e0d9e7b2b5bbc data\spark-mod\recipes\stripped_white_phosphorus_wood.json
 e442cbe5e3216bea7aa340312d30621114d54150 data\spark-mod\advancements\recipes\building_blocks\tungsten.json
 34b9c5fe1bae22700e80c88b3422c2f118496ae6 data\spark-mod\recipes\minium_from_blasting_minium_ore.json
+35aee0839d14843d63445e75962bea93d9f833a5 data\spark-mod\recipes\heavy_workbench.json
 e8cac7ad42a5637835261eb3ba4916ea21e86b5c data\spark-mod\recipes\white_phosphorus_planks.json
 5bc919534e3a13b8af751e39a3810d3417b916b8 data\spark-mod\advancements\recipes\misc\minium_from_smelting_minium_ore.json
 8aed8066344fdb61fc51f4b6769f5689b8b35b49 data\spark-mod\advancements\recipes\misc\minium_from_smelting_deepslate_minium_ore.json

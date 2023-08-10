@@ -41,8 +41,9 @@ public class ModItemGroup {
                         entries.add(ModBlocks.WHITE_PHOSPHORUS_SAPLING);
                         entries.add(ModBlocks.WHITE_PHOSPHORUS_WOOD);
 
-                        //Custom Blocks
+                        //Crafting Blocks
                         entries.add(ModBlocks.STONE_BRICK_FORGE);
+                        entries.add(ModBlocks.HEAVY_WORKBENCH);
 
                     }).build());
 
