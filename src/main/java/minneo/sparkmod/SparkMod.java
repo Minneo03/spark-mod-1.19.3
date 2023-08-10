@@ -3,8 +3,10 @@ package minneo.sparkmod;
 import minneo.sparkmod.block.ModBlocks;
 import minneo.sparkmod.block.ModFlammableBlockRegistry;
 import minneo.sparkmod.block.ModStrippableBlockRegistry;
+import minneo.sparkmod.block.entity.ModBlockEntities;
 import minneo.sparkmod.item.ModItemGroup;
 import minneo.sparkmod.item.ModItems;
+import minneo.sparkmod.screen.ModScreenHandlers;
 import minneo.sparkmod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
@@ -29,6 +31,10 @@ public class SparkMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModWorldGeneration.generateModWorldGen();
+
+		ModBlockEntities.registerBlockEntities();
+
+		ModScreenHandlers.registerAllScreenHandlers();
 
 		ModFlammableBlockRegistry.registerFlammableBlocks();
 		ModStrippableBlockRegistry.registerStrippableBlocks();
